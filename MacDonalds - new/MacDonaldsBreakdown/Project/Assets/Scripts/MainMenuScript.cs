@@ -14,8 +14,10 @@ public class MainMenuScript : MonoBehaviour {
 	void Start() {
 
 		if (button == Button.Sound)
-				if (!PlayerPrefs.HasKey ("Sound"))
+				if (!PlayerPrefs.HasKey ("Sound")) {
 						PlayerPrefs.SetString ("Sound", "On");
+						audio.mute = false;
+				}
 
 	}
 
@@ -26,11 +28,13 @@ public class MainMenuScript : MonoBehaviour {
 			Application.LoadLevel ("GrassLevel2");
 		else if (button == Button.About)
 			Application.LoadLevel ("About");
-		else if (PlayerPrefs.GetString("Sound") == "On")
+		else if (PlayerPrefs.GetString("Sound") == "On") {
 			PlayerPrefs.SetString ("Sound", "Off");
-		else
-			PlayerPrefs.SetString ("Sound", "Off");
-	
+			audio.mute = true;
+		} else {
+			PlayerPrefs.SetString ("Sound", "On");
+			audio.mute = false;
+		}
 	}
 
 }
