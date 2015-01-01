@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour 
 {
-	//public GameObject explosion;		// Prefab of explosion effect.
+	public GameObject explosion;		// Prefab of explosion effect.
 	public AudioClip shootClip;				// Array of clips to play when the player is damaged.
 	public AudioClip boomClip;				// Array of clips to play when the player is damaged.
 
@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
 	{
 		AudioSource.PlayClipAtPoint(shootClip, transform.position);
 
-		// Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
+		//Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
 		Destroy(gameObject, 2);
 	}
 	
@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
 		Quaternion randomRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
 		
 		// Instantiate the explosion where the rocket is with the random rotation.
-		//Instantiate(explosion, transform.position, randomRotation);
+		Instantiate(explosion, transform.position, randomRotation);
 	}
 	
 	void OnTriggerEnter2D (Collider2D col) 
