@@ -2577,7 +2577,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 475619914ed4e8e4a91dddac8051b381, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 475619914ed4e8e4a91dddac8051b381, type: 2}
       propertyPath: m_LocalScale.x
@@ -3663,7 +3663,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af80fe7abb2604963b7e7b5a24685a6b, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: af80fe7abb2604963b7e7b5a24685a6b, type: 2}
       propertyPath: m_Materials.Array.data[0]

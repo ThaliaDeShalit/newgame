@@ -48,7 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AboutReturnScript.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\Destroyer 1.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\FirstTextCollider.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
