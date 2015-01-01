@@ -9,5 +9,10 @@ public class MainMenuMusic : MonoBehaviour {
 			Destroy(gameMusic);
 		}
 		DontDestroyOnLoad(gameObject);
+		if (FindObjectsOfType(GetType()).Length > 1)
+		{
+			Destroy(gameObject);
+		}
 	}
+
 }
