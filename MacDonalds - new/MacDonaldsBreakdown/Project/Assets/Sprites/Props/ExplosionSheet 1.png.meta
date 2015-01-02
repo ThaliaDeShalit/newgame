@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 0ece7890609712a4b9f8f60da17fa924
+guid: 4644e523ec9b36148a816cc69c1c2f7e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ExplosionSheet_0
-    21300002: ExplosionSheet_1
-    21300004: ExplosionSheet_2
-    21300006: ExplosionSheet_3
+    21300000: ExplosionSheet 1_0
+    21300002: ExplosionSheet 1_1
+    21300004: ExplosionSheet 1_2
+    21300006: ExplosionSheet 1_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -47,7 +47,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: ExplosionSheet_0
+    - name: ExplosionSheet 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -57,33 +57,33 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ExplosionSheet_1
+    - name: ExplosionSheet 1_1
       rect:
         serializedVersion: 2
         x: 256
-        y: 292
-        width: 259
-        height: 308
+        y: 285
+        width: 261
+        height: 315
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ExplosionSheet_2
+    - name: ExplosionSheet 1_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 219
-        height: 284
+        y: 21
+        width: 261
+        height: 273
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ExplosionSheet_3
+    - name: ExplosionSheet 1_3
       rect:
         serializedVersion: 2
-        x: 345
-        y: 39
-        width: 268
-        height: 285
+        x: 362
+        y: 28
+        width: 251
+        height: 314
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

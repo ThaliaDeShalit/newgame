@@ -8,7 +8,7 @@ public class Gun : MonoBehaviour
 	
 	
 	private PlayerControl playerCtrl;		// Reference to the PlayerControl script.
-	//private Animator anim;					// Reference to the Animator component.
+	private Animator anim;					// Reference to the Animator component.
 	
 	private Pauser pauser;
 
@@ -16,7 +16,7 @@ public class Gun : MonoBehaviour
 	void Awake()
 	{
 		// Setting up the references.
-		//anim = transform.root.gameObject.GetComponent<Animator>();
+		anim = transform.root.gameObject.GetComponent<Animator>();
 		playerCtrl = transform.root.GetComponent<PlayerControl>();
 		GameObject menu = GameObject.Find ("MenuButton"); 
 		pauser = menu.GetComponent<Pauser>();
@@ -30,7 +30,8 @@ public class Gun : MonoBehaviour
 		if((Input.GetButtonDown("Fire1")) && (!pauser.paused))
 		{
 			// ... set the animator Shoot trigger parameter and play the audioclip.
-			//anim.SetTrigger("Shoot");
+			Debug.Log("I'm setting shoot");
+			anim.SetTrigger("Shoot");
 			//audio.Play();
 			
 			// If the player is facing right...

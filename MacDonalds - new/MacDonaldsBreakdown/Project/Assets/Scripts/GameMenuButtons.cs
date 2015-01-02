@@ -38,11 +38,11 @@ public class GameMenuButtons : MonoBehaviour {
 		GameObject musicDisableButton = transform.parent.FindChild ("MusicDisabled").gameObject;
 		Debug.Log ("Music Changer: " + musicDisableButton.activeSelf);
 		musicDisableButton.SetActive (!musicDisableButton.activeSelf);
-		if (PlayerPrefs.GetString("Sound") == "On") {
+		if (PlayerPrefs.GetString("Music") == "On") {
 			audio.mute = true;
-			PlayerPrefs.SetString ("Sound", "Off");
+			PlayerPrefs.SetString ("Music", "Off");
 		} else {
-			PlayerPrefs.SetString ("Sound", "On");
+			PlayerPrefs.SetString ("Music", "On");
 			audio.mute = false;
 		}
 	}

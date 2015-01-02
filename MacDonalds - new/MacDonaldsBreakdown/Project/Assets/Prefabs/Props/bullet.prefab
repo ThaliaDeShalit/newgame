@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e842201bc63abd46a4796010c3189b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 100000, guid: d74f6e7b92463d54d83294582800a7fe, type: 2}
+  explosion: {fileID: 100000, guid: d1106f5f67aed5648af844fa51f3d691, type: 2}
   shootClip: {fileID: 8300000, guid: e3de9104f82e9cc44b7e1a21392b6384, type: 3}
   boomClip: {fileID: 8300000, guid: b14a91c802ff9a84baf87d3f3316606f, type: 3}
 --- !u!212 &21200000
