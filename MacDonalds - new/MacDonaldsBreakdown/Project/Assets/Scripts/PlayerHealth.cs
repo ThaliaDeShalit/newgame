@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
 	private PlayerControl playerControl;		// Reference to the PlayerControl script.
 	private bool createdSpirit = false;
 
-//	private Animator anim;						// Reference to the Animator on the player
+	private Animator anim;						// Reference to the Animator on the player
 
 	
 	
@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
 		// Setting up references.
 		playerControl = GetComponent<PlayerControl>();
 		healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
-//		anim = GetComponent<Animator>();
+		anim = GetComponent<Animator>();
 		
 		// Getting the intial scale of the healthbar (whilst the player has full health).
 		healthScale = healthBar.transform.localScale;
@@ -89,8 +89,8 @@ public class PlayerHealth : MonoBehaviour
 						createdSpirit = true;
 						GameObject.Instantiate(playerSpirit,transform.position, transform.rotation);
 					}
-					// ... Trigger the 'Die' animation state
-//					anim.SetTrigger("Die");
+					// Trigger the 'Die' animation state
+					anim.SetTrigger("Die");
 				}
 			}
 		}

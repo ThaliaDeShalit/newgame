@@ -102,7 +102,7 @@ public class Enemy : MonoBehaviour
 		grounded = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
 		playerDead = playerHealthScript.dead;
 
-		// If the enemy is on the ground and the player is dead
+		//If the enemy is on the ground and the player is dead
 		if (playerDead && grounded) {
 			Vector2 vel = rigidbody2D.velocity;
 			vel.x *= 0;
